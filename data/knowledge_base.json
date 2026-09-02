@@ -1,0 +1,169 @@
+{
+  "cnic_renewal": {
+    "keywords": ["cnic", "shanakhti card", "identity card", "cnic renewal", "cnic kho gaya", "lost cnic", "cnic gum", "national identity card", "nadra card"],
+    "title": {
+      "en": "CNIC Renewal / Re-issuance (Lost or Expired)",
+      "ur": "شناختی کارڈ کی تجدید / دوبارہ اجراء"
+    },
+    "summary": {
+      "en": "Your Computerized National Identity Card (CNIC) can be renewed if expired, or re-issued if lost/stolen/damaged, through NADRA.",
+      "ur": "اگر آپ کا شناختی کارڈ گم ہو گیا ہے، خراب ہو گیا ہے یا میعاد ختم ہو چکی ہے تو آپ نادرا کے ذریعے اسے دوبارہ بنوا سکتے ہیں۔"
+    },
+    "documents": [
+      "Old CNIC (if expired/damaged) or FIR/application for lost CNIC report",
+      "Original Form-B / B-Form (for reference, not always required for adults)",
+      "Passport-size photograph (light background, taken at NADRA center)",
+      "Proof of current residential address (utility bill, rent agreement, etc.)",
+      "Biometric verification (fingerprints) done in person at NADRA center",
+      "For lost CNIC: a written declaration/affidavit of loss (no FIR required as of current NADRA policy, but some centers still ask for it — confirm at your local office)"
+    ],
+    "fees": {
+      "normal": "PKR 750 (delivery in ~30 working days)",
+      "urgent": "PKR 1,500 (delivery in ~15 working days)",
+      "executive": "PKR 2,500 (delivery in ~7 working days)",
+      "note": "Fees are revised periodically by NADRA; verify current rates at nadra.gov.pk or your local center before visiting."
+    },
+    "processing_time": "7 to 30 working days depending on service tier (Normal/Urgent/Executive)",
+    "office": {
+      "en": "Nearest NADRA Registration Center (NRC) or e-Sahulat/Franchise center",
+      "ur": "قریب ترین نادرا رجسٹریشن سینٹر"
+    },
+    "how_to_locate": "Search 'NADRA center near me' on Google Maps, or check nadra.gov.pk for the center locator. In Islamabad, major centers include NADRA HQ Mauve Area G-8/1, and NADRA Mega Center Blue Area.",
+    "warnings": [
+      "Always double-check your address spelling on the token/receipt before leaving the counter — corrections later require a separate modification request",
+      "Avoid unauthorized 'agents' outside NADRA centers who charge extra for 'fast processing' — this is unofficial and risky",
+      "Book a token online via the NADRA Wallet app or Pak Identity portal where available to avoid long queues",
+      "Keep your token/receipt number safe to track your CNIC status online"
+    ],
+    "overseas_note": {
+      "en": "Overseas Pakistanis can apply for CNIC renewal/re-issuance through the nearest Pakistani Embassy/Consulate or via NADRA's international centers in countries where they operate. The process typically requires an in-person visit for biometrics, similar documents, and fees are usually charged in the local currency equivalent (often higher than domestic fees). Processing and courier time to the overseas address can take several weeks longer than domestic timelines.",
+      "ur": "بیرون ملک مقیم پاکستانی قریبی پاکستانی سفارت خانے یا نادرا کے بین الاقوامی مراکز کے ذریعے شناختی کارڈ کی تجدید کروا سکتے ہیں۔"
+    },
+    "last_verified": "2025-06"
+  },
+  "passport_renewal": {
+    "keywords": ["passport", "passport renewal", "new passport", "passport banwana", "e-passport", "machine readable passport", "mrp"],
+    "title": {
+      "en": "Passport Application / Renewal",
+      "ur": "پاسپورٹ کی تجدید / نیا پاسپورٹ"
+    },
+    "summary": {
+      "en": "Pakistani passports (MRP or e-Passport) are issued by the Directorate General of Immigration & Passports (DGIP). You can apply fresh or renew an expiring/expired passport online or in person.",
+      "ur": "پاکستانی پاسپورٹ ڈائریکٹوریٹ جنرل امیگریشن اینڈ پاسپورٹس کی طرف سے جاری کیا جاتا ہے۔"
+    },
+    "documents": [
+      "Valid CNIC (original + photocopy)",
+      "Old passport (original, if renewing)",
+      "Passport-size photographs (as specified by DGIP, usually taken digitally at center)",
+      "Online application form printout (from the Online Passport Application System)",
+      "For minors: B-Form and parents' CNICs",
+      "Proof of fee payment (bank challan or online payment receipt)"
+    ],
+    "fees": {
+      "normal_5yr_36pg": "Approx. PKR 4,500-6,000 (varies by booklet type and pages)",
+      "urgent": "Approx. PKR 9,000-12,000 (10 working days)",
+      "fast_track": "Approx. PKR 15,000-24,000 (2-3 working days, select centers only)",
+      "note": "Fee structure changes periodically and differs by passport validity (5 vs 10 years) and page count (36 vs 72). Always verify current fee schedule on dgip.gov.pk before submitting."
+    },
+    "processing_time": "Normal: 3-6 weeks | Urgent: ~10 working days | Fast Track: 2-3 working days (availability varies by center)",
+    "office": {
+      "en": "Regional Passport Office (RPO) or Passport & Visa Application Center",
+      "ur": "ریجنل پاسپورٹ آفس"
+    },
+    "how_to_locate": "Use the online booking portal at dgip.gov.pk to select your nearest Regional Passport Office and book an appointment slot. In Islamabad, the main RPO is located in G-11/1.",
+    "warnings": [
+      "Book your appointment online in advance — walk-ins often face long delays or are turned away at busy centers",
+      "Bring both originals and photocopies of all documents; missing photocopies is a common cause of rejection",
+      "Double check name spelling matches your CNIC exactly, as mismatches cause processing delays",
+      "Fast Track service is only available at select RPOs — confirm availability before planning around it"
+    ],
+    "overseas_note": {
+      "en": "Overseas Pakistanis can apply through the Pakistani Embassy/Consulate in their country of residence, which forwards the application to DGIP. Processing typically takes longer (often 6-12 weeks) due to international courier and verification steps, and fees are charged in local currency.",
+      "ur": "بیرون ملک پاکستانی اپنے ملک کے پاکستانی سفارت خانے کے ذریعے پاسپورٹ کے لیے درخواست دے سکتے ہیں۔"
+    },
+    "last_verified": "2025-06"
+  },
+  "driving_license": {
+    "keywords": ["driving license", "driving licence", "license transfer", "learner permit", "dl", "gari license"],
+    "title": {
+      "en": "Driving License (New / Renewal / Transfer)",
+      "ur": "ڈرائیونگ لائسنس"
+    },
+    "summary": {
+      "en": "Driving licenses are issued provincially (e.g., by the Excise & Taxation Department or a city Traffic Police licensing branch). Process includes a learner's permit first, followed by a road test for the permanent license.",
+      "ur": "ڈرائیونگ لائسنس صوبائی محکمہ ایکسائز اینڈ ٹیکسیشن یا ٹریفک پولیس کی طرف سے جاری کیا جاتا ہے۔"
+    },
+    "documents": [
+      "Valid CNIC (original + photocopy)",
+      "Learner's permit (required before applying for permanent license, valid for 6 months)",
+      "Medical fitness certificate (from an authorized doctor, especially for public service vehicle licenses)",
+      "Passport-size photographs",
+      "Application form (available at the licensing branch or online portal, e.g. Islamabad Traffic Police site)",
+      "Eye test certificate (sometimes done on-site)"
+    ],
+    "fees": {
+      "learner_permit": "Approx. PKR 50-150",
+      "permanent_license_car": "Approx. PKR 1,300-1,700 (varies by city/province and validity period)",
+      "permanent_license_bike": "Approx. PKR 800-1,200",
+      "note": "Fees vary by province/city and license category (motorcycle, car, PSV, heavy transport). Verify with your local Excise & Taxation or Traffic Police office."
+    },
+    "processing_time": "Learner permit: same day. Permanent license: issued same day after passing road test, typically 1-4 weeks after the learner period (minimum 6 months learner period before car license road test in most jurisdictions, less for motorcycle in some cities)",
+    "office": {
+      "en": "City Traffic Police licensing branch or Excise & Taxation Department office",
+      "ur": "شہر کی ٹریفک پولیس یا محکمہ ایکسائز اینڈ ٹیکسیشن کا دفتر"
+    },
+    "how_to_locate": "In Islamabad, apply via the Islamabad Traffic Police (ITP) licensing branch (Sector G-7) or their online portal. Other cities: check your provincial Excise & Taxation Department website.",
+    "warnings": [
+      "You must hold a learner's permit for the minimum required period before taking the road test — plan the timeline in advance",
+      "Avoid agents who claim they can 'skip' the road test — this is illegal and can invalidate your license",
+      "International Driving Permits require your existing Pakistani license first and are issued separately",
+      "License transfer between provinces/cities may require additional verification — check with the receiving office"
+    ],
+    "overseas_note": {
+      "en": "Overseas Pakistanis can often convert a valid foreign driving license to a Pakistani one at certain provincial offices, subject to reciprocal agreements, or may need to complete the full local process including the road test — this varies by country and province, so check with the specific licensing authority.",
+      "ur": "بیرون ملک مقیم پاکستانی بعض اوقات اپنا غیر ملکی لائسنس تبدیل کروا سکتے ہیں، تفصیلات کے لیے متعلقہ محکمہ سے رابطہ کریں۔"
+    },
+    "last_verified": "2025-06"
+  },
+  "vehicle_registration": {
+    "keywords": ["vehicle registration", "car registration", "bike registration", "number plate", "gari registration", "motor registration", "vehicle transfer"],
+    "title": {
+      "en": "Vehicle Registration / Ownership Transfer",
+      "ur": "گاڑی کی رجسٹریشن"
+    },
+    "summary": {
+      "en": "New and used vehicles must be registered with the provincial Excise & Taxation Department to obtain a legal number plate and registration book, and ownership transfers must also be formally recorded.",
+      "ur": "نئی اور پرانی گاڑیوں کو صوبائی محکمہ ایکسائز اینڈ ٹیکسیشن میں رجسٹرڈ کروانا لازمی ہے۔"
+    },
+    "documents": [
+      "Valid CNIC of buyer/owner (original + photocopy)",
+      "Sale certificate / invoice from dealer (for new vehicles)",
+      "Original registration book and transfer letter (for used vehicle transfer)",
+      "Vendor/seller's CNIC copy (for transfer)",
+      "Proof of tax payments (token tax, income tax as applicable)",
+      "Vehicle verification/inspection report (for used vehicles, at some offices)"
+    ],
+    "fees": {
+      "registration_new": "Varies significantly by engine capacity (CC) and vehicle value — ranges roughly from PKR 3,000 to PKR 50,000+",
+      "transfer_fee": "Varies by province and vehicle value; typically a percentage-based or slab-based fee plus token tax",
+      "note": "Fees depend heavily on engine capacity, vehicle price, and province. Always check the current slab rates on your provincial Excise & Taxation website before budgeting."
+    },
+    "processing_time": "New registration: 1-3 working days after document submission. Ownership transfer: 3-7 working days typically",
+    "office": {
+      "en": "Provincial Excise & Taxation Department (Motor Registration Branch)",
+      "ur": "محکمہ ایکسائز اینڈ ٹیکسیشن (موٹر رجسٹریشن برانچ)"
+    },
+    "how_to_locate": "In Islamabad, the relevant office is the Excise & Taxation Department, Motor Registration Authority (I-9). Other cities: check your provincial Excise & Taxation Department website for the nearest branch.",
+    "warnings": [
+      "Always verify that the vehicle has no outstanding challans, theft reports, or tax arrears before completing a transfer",
+      "Get the transfer properly recorded — an informal 'possession letter' sale is not the same as legal registration transfer and can cause disputes later",
+      "Keep photocopies of all documents, as originals are sometimes retained temporarily by the department",
+      "Token tax must be paid annually even after registration — separate from the one-time registration fee"
+    ],
+    "overseas_note": {
+      "en": "Overseas Pakistanis can authorize a representative in Pakistan via an attested Power of Attorney to complete vehicle registration or transfer on their behalf, since biometric/in-person presence requirements are typically limited to the local representative, not the overseas owner.",
+      "ur": "بیرون ملک پاکستانی پاور آف اٹارنی کے ذریعے پاکستان میں کسی نمائندے کو گاڑی رجسٹرڈ کروانے کا اختیار دے سکتے ہیں۔"
+    },
+    "last_verified": "2025-06"
+  }
+}
