@@ -5,10 +5,10 @@ Core "Paper Trail" agent logic:
   1. Detect language of the user's message
   2. Try to match the query against the local knowledge base first
   3. If no local match, fall back to live web search (search_tool.py)
-  4. Use an LLM (Claude, via ANTHROPIC_API_KEY) to:
-       - handle contextual follow-up questions (e.g. "what if I'm abroad?")
-       - turn raw web-search results into a structured roadmap when the
-         local KB has nothing
+  4. Use an LLM (Gemini, via GEMINI_API_KEY) to:
+        - handle contextual follow-up questions (e.g. "what if I'm abroad?")
+        - turn raw web-search results into a structured roadmap when the
+          local KB has nothing
   5. Return a dict the Streamlit UI can render directly
 
 If no LLM API key is configured, the agent still works using the local
@@ -161,13 +161,19 @@ def handle_message(user_message: str, conversation_history: list, lang_ui: str =
         # Follow-up question about an already-identified process (e.g. "what if I'm abroad?")
         process_id, record = match
         overseas_note = record.get("overseas_note", {})
+        
+        # Check if the query is specifically asking about fees or general local details instead of overseas
+        query_lower = query.lower()
+        is_fee_query = "fee" in query_lower or "kitne" in query_lower or "price" in query_lower or "cost" in query_lower or "paisa" in query_lower or "amount" in query_lower
+        is_overseas_query = "abroad" in query_lower or "foreign" in query_lower or "bahar" in query_lower or "overseas" in query_lower or "visa" in query_lower
+
+        # Call LLM first with contextual prompt
         llm_reply = _llm_answer(
             query,
             conversation_history,
             context_note=(
                 f"Process: {record['title'].get('en')}\n"
-                f"Overseas-specific note: {overseas_note.get('en', 'Not documented locally.')}\n"
-                f"Full record: {record}"
+                f"Full record data: {record}"
             ),
         )
         if llm_reply:
@@ -177,7 +183,23 @@ def handle_message(user_message: str, conversation_history: list, lang_ui: str =
                 "confidence": "medium",
                 "used_search": False,
             }
-        # No LLM configured — fall back to the static overseas_note field
+
+        # If LLM failed and user is asking about fees or general info (not overseas), return the clean roadmap
+        if is_fee_query or not is_overseas_query:
+            roadmap_md = format_roadmap(
+                record,
+                lang_ui=lang_ui,
+                confidence="medium",
+                source_note="Sourced from verified local knowledge base",
+            )
+            return {
+                "text": roadmap_md,
+                "matched_process_id": process_id,
+                "confidence": "medium",
+                "used_search": False,
+            }
+
+        # No LLM configured — fall back to the static overseas_note field if specifically an overseas query
         if overseas_note:
             note_text = overseas_note.get(lang_ui, overseas_note.get("en", ""))
             return {
